@@ -1,0 +1,184 @@
+html {
+     box-sizing: border-box;
+   }
+   
+   *, *::before, *::after {
+     box-sizing: inherit;
+     margin: 0;
+     padding: 0;
+   }
+
+/************************************************************************
+/* BASE STYLES
+/*************************************************************************/
+body {
+     margin: 0%;
+     font-weight: 400;
+     font-size: 14px;
+     font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+}
+header {
+     top: 0;
+     display: block;
+     margin: 0 auto;
+     height: 60px;
+}
+a {
+     text-decoration: none;
+}
+nav {
+     display: block;
+     clear: both;
+     margin: 0%;
+     padding-left: 20px;
+}
+main {
+     display: flex;
+     max-width: 1160px;
+     max-height: 700px;
+     margin: 50px 226px 0px 226px;
+     padding: 0px 20px;
+     color: #21242C;
+}
+body > main > section.main-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 564px;
+     height: 700px;
+}
+main + section {
+     padding: 40px 0px 80px;
+     text-align: center;
+     height: 760px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+     border-top: 1px solid #D6D8DA;
+     border-bottom: 1px solid #D6D8DA;
+}
+.navbar {
+     display: flex;
+     align-items: center;
+     padding: 0px 15%;
+}
+.nav-links {
+     list-style: none;
+     display: flex;
+     width: 512.5px;
+}
+nav li input[type=text] {
+     background-color: #edf0f3;
+     height: 40px;
+     padding: 6px;
+     width: 200px;
+     border: none;
+     margin-top: 8px;
+     border-radius: 4px;
+}
+nav li input[type="text"]::placeholder {
+     color: #1865F2;
+     padding-left: 20%;
+}
+input[type="text"]:hover {
+     background-color: #ced0d3;
+}
+input.nosubmit {
+     background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 19px center;
+     cursor: pointer;
+}
+.logo {
+     list-style: none;
+     display: flex;
+     width: 190px;
+}
+nav > ul + ul + ul {
+     justify-content: end;
+}
+.nav-linksa {
+     list-style: none;
+     display: flex;
+     width: 512.5px;
+}
+.nav-item a, nav a span {
+     display: inline-block;
+     width: 33.33%;
+     padding: 20px 5px;
+     color: #1865F2;
+     font-weight: bold;
+     text-decoration: none;
+     text-align: center;
+}
+nav a span {
+     width: 73px;
+}
+nav > ul > li.nav-start + li.nav-start {
+     padding-left: 32px;
+}
+nav > ul + ul > li + li {
+     padding-left: 32px;
+}
+nav > a {
+     width: 45%;
+     color: #1865F2;
+}
+nav h1{
+     color: rgb(4, 4, 126);
+     padding-top: 4px;
+}
+nav h1:hover {
+     color: #1865F2;
+}
+nav img {
+     width: 30px;
+     height: 30px;
+}
+/***MainSection***/
+main img {
+     max-width: 600px;
+     height: fit-content;
+     margin: 10px 22px 0px 0px;
+}
+section h1 {
+     font-family: 'Source Serif Pro', 'Noto Serif', serif;
+     font-size: 53px;
+     font-weight: 600;
+     margin: 0;
+    
+}
+main > section > h1 span {
+     display: block;
+}
+main > section p {
+     font-size: 18px;
+     letter-spacing: -0.1px;
+     line-height: 30px;
+     margin: 36px 0px 32px 0px;
+}
+main > ul {
+     display: flex;
+     list-style: none;
+     width: 564px;
+     max-height: 40px;
+}
+main > section > ul > li {
+     display: inline-flex;
+     align-items: center;
+     width: 100px;
+     height: 40px;
+     background-color: #0066ff;
+     padding: 0px 16px;
+     border-radius: 5px;
+}
+main > section > ul > li a {
+     width: 100%;
+     text-align: center;
+     text-decoration: none;
+     font-size: 16px;
+     color: white;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
